@@ -1,0 +1,13 @@
+$color-primary: #f3f;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background-color: $color-primary;
+}
