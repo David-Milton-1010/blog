@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #f3f;
+  background: linear-gradient(to right, #e0dfbe, #d1bb6a);
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */
