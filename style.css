@@ -1,14 +1,107 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
 body {
-  background: linear-gradient(to right, #e0dfbe, #d1bb6a);
-  background-attachment: fixed;
+  height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(49, 49, 46, 0.9450980392);
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+#navbar {
+  height: 40vh;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+  position: relative;
+}
+
+#navbar ul li:first-child {
+  position: absolute;
+  left: -1070px;
+  top: 0px;
+  transition: ease-in-out 0.3s;
+}
+#navbar ul li:first-child:hover {
+  color: teal;
+}
+
+#navbar li {
+  font-size: 2.75rem;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  float: left;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+#navbar a:hover {
+  color: teal;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.most-recent {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
